@@ -1,1 +1,1 @@
-web: gunicorn Soffer.wsgi:application --bind 0.0.0.0:$PORT
+gunicorn myproject.wsgi:application --bind 0.0.0.0:10000
