@@ -1,1 +1,1 @@
-gunicorn myproject.wsgi:application --bind 0.0.0.0:10000
+gunicorn Soffer.wsgi:application --bind 0.0.0.0:10000
