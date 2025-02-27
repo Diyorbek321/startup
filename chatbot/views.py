@@ -19,87 +19,89 @@ class ChatPattern:
 
 
 CHAT_PATTERNS = [
-    # Greetings
+    # Salomlashish
     ChatPattern(
-        patterns=[r"\b(hi|hello|hey|howdy|hola|greetings)\b"],
+        patterns=[r"\b(salom|hi|hello|hey|assalomu alaykum)\b"],
         responses=[
-            "Hello! 👋 How can I assist you today?",
-            "Hi there! What can I help you with?",
-            "Hey! Great to see you. How may I help?",
-            "Welcome! How can I make your day better?"
+            "Salom! 👋 Sizga qanday yordam bera olaman?",
+            "Salom, hush kelibsiz! Qanday yordam bera olaman?",
+            "Hey! Qanday yordam bera olaman?",
+            "Assalomu alaykum! Bugun sizga qanday foydam tegishi mumkin?"
         ]
     ),
-    # How are you
+    # Hol-ahvol so'rash
     ChatPattern(
-        patterns=[r"\b(how are you|how's it going|how are things)\b"],
+        patterns=[r"\b(qandaysiz|ahvoling qanday|yaxshimisiz)\b"],
         responses=[
-            "I'm doing great, thanks for asking! How about you? 😊",
-            "All good here! How can I help you today?",
-            "I'm wonderful! What brings you here today?",
-            "Doing excellent! Ready to assist you! 🌟"
+            "Yaxshi, rahmat! Siz-chi? 😊",
+            "Ajoyib! Bugun qanday yordam bera olaman?",
+            "Zo'rman! Nima yordam kerak?",
+            "Yaxshi! Sizga qanday ko'mak bera olaman?"
         ]
     ),
-    # Thanks
+    # Minnatdorchilik
     ChatPattern(
-        patterns=[r"\b(thanks|thank you|thx|appreciate it)\b"],
+        patterns=[r"\b(rahmat|katta rahmat|raxmat|tashakkur)\b"],
         responses=[
-            "You're welcome! 😊",
-            "Glad I could help! 🌟",
-            "My pleasure! Let me know if you need anything else!",
-            "Anytime! Don't hesitate to ask if you need more help!"
+            "Arzimaydi! 😊",
+            "Sizga yordam bera olganimdan xursandman! 🌟",
+            "Marhamat! Yana savollaringiz bo'lsa, bemalol so'rang!",
+            "Siz uchun har doim tayyorman! 🤗"
         ]
     ),
-    # Goodbye
+    # Xayrlashish
     ChatPattern(
-        patterns=[r"\b(goodbye|bye|see you|cya|farewell)\b"],
+        patterns=[r"\b(xayr|hayr|ko'rishguncha|salomat bo'ling)\b"],
         responses=[
-            "Goodbye! Have a great day! 👋",
-            "See you later! Take care! 😊",
-            "Bye! Hope to chat again soon!",
-            "Take care! Remember, I'm here if you need help! 🌟"
+            "Xayr! Yaxshi kun tilayman! 👋",
+            "Ko'rishguncha! O'zingizga qarang! 😊",
+            "Hayr! Yana uchrashguncha!",
+            "Salomat bo'ling! Agar yordam kerak bo'lsa, men shu yerdaman!"
         ]
     ),
-    # Help
+    # Yordam
     ChatPattern(
-        patterns=[r"\b(help|assist|support)\b"],
+        patterns=[r"\b(yordam|ko'mak|maslahat)\b"],
         responses=[
-            "I'd be happy to help! What do you need assistance with? 🤝",
-            "Sure thing! What kind of help are you looking for?",
-            "I'm here to help! Could you please specify what you need?",
-            "Ready to assist! What's on your mind? 💭"
+            "Albatta, qanday yordam bera olaman? 🤝",
+            "Sizga qanday ko'mak kerak? Tafsilot berib o'ting!",
+            "Savolingizni aniqroq tushuntirsangiz, yaxshi bo'lardi!",
+            "Yordamga tayyorman! Nima masala bo'yicha yordam kerak?"
         ]
     ),
-    # Time and Date
+    # Ob-havo haqida (misol javob)
     ChatPattern(
-        patterns=[r"\b(what('s| is) the time|what time is it|what('s| is) today('s| is) date)\b"],
+        patterns=[r"\b(ob-havo|havo qanday|ertaga havo)\b"],
         responses=[
-            lambda: f"It's {datetime.now().strftime('%I:%M %p')} on {datetime.now().strftime('%A, %B %d, %Y')} 🕒"
+            "Men real vaqtdagi ob-havo ma'lumotlarini ko'ra olmayman, ammo siz ob-havo ilovalaridan foydalanishingiz mumkin! ☀️",
+            "Aniq bilmayman, lekin sizga eng yaqin ob-havo xizmatini tavsiya qila olaman! ☁️"
         ]
     ),
-    # Weather inquiry (mock response)
+    # Dasturlash bo'yicha yordam
     ChatPattern(
-        patterns=[r"\b(what('s| is) the weather|how('s| is) the weather)\b"],
+        patterns=[r"\b(dasturlash yordam|kod yozish yordam|proyekt yordam)\b"],
         responses=[
-            "I'm not connected to real-time weather data, but I can help you find a weather service! 🌤️",
-            "While I can't check the weather directly, I can suggest some weather apps! ⛅"
+            "Dasturlash bo'yicha yordam kerakmi? Qaysi til yoki framework bilan ishlayapsiz? 💻",
+            "Albatta! Qanday loyiha ustida ishlayapsiz? Qanday muammo bor? 🚀",
+            "Kod yozishda yordam kerakmi? Muammoni batafsilroq tushuntiring! 🛠️"
         ]
     ),
-    # Project help
     ChatPattern(
-        patterns=[r"\b(project help|coding help|programming help)\b"],
+        patterns=['Kompaniya haqida'],
         responses=[
-            "I can help with various programming topics! What language or framework are you working with? 💻",
-            "Sure! What kind of project are you working on? I'd be happy to provide guidance! 🚀",
-            "Programming assistance? Great! Could you describe your project or the specific issue? 🛠️"
+            "Kompaniyamiz 5 yildan beri ishlab kelmoqda "
+            'Biz qanday ishlaymiz?'
+            'Biz mijozlarga ularning hohish istaklaridan kelib chiqgan holda dasturiy taminoat yaratishga yordam beramiz '
+            'Qanday dasturiy taminot yaratamiz? '
+            'Biz biznesingiz uchun it yechimlarini taklif qilamiz yani tuli xil web saytlar chatbot crm erp telegram bot tizimlarini taklif qilamiz'
         ]
-    ),
+    )
 ]
 
 DEFAULT_RESPONSES = [
-    "I'm not quite sure about that. Could you rephrase your question? 🤔",
-    "I didn't quite catch that. Can you explain differently?",
-    "Hmm, I'm not sure I understand. Could you provide more details?",
-    "I'm still learning! Could you try asking in a different way? 🌱"
+    "Tafsilotlarni ulashganingiz uchun rahmat tez orada bizning agentimiz siga javib qaytaradi",
+    # "Men hali o'rganishda davom etyapman! Iltimos, boshqacha shaklda so'rab ko'ring. 🌱",
+    "Bu haqda aniq bilmayman, lekin sizga yordam berishga harakat qilaman!"
 ]
 
 

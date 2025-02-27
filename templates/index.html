@@ -66,7 +66,7 @@
                     <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Free Trail</a>
+{#                <a href="" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Free Trail</a>#}
             </div>
         </nav>
 
@@ -80,16 +80,16 @@
                             Samarali biznes boshqaruvi uchun zamonaviy va qulay dastur. Ish jarayonlarini
                             soddalashtiring va samaradorlikni oshiring!
                         </p>
-                        <div class="position-relative w-100 mt-3">
-                            <label>
-                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                                       placeholder="Email manzilingizni kiriting" style="height: 58px;">
-                            </label>
-                            <button type="button"
-                                    class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2">
-                                Bepul sinab ko'ring
-                            </button>
-                        </div>
+{#                        <div class="position-relative w-100 mt-3">#}
+{#                            <label>#}
+{#                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"#}
+{#                                       placeholder="Email manzilingizni kiriting" style="height: 58px;">#}
+{#                            </label>#}
+{#                            <button type="button"#}
+{#                                    class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2">#}
+{#                                Bepul sinab ko'ring#}
+{#                            </button>#}
+{#                        </div>#}
                     </div>
                     <div class="col-lg-6 text-center text-lg-start">
                         <img class="img-fluid rounded animated zoomIn" src="{% static 'soffer-1.0.0/img/hero.jpg' %}"
@@ -369,107 +369,63 @@
 
 
     <!-- Pricing Start -->
-    <div class="container-xxl py-6" id="pricing">
-        <div class="container">
-            <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-3">Narxlar rejasi</h1>
-                <p class="mb-5">Bizning xizmatlarimizdan foydalanish uchun qulay tarif rejalari. O'zingizga mos
-                    keladigan variantni tanlang va ish boshlang!</p>
+   <div class="container-xxl py-6" id="pricing">
+    <div class="container">
+        <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Narxlar rejasi</h1>
+            <p class="mb-5">Xizmat narxlari mijozning talab va istaklariga qarab individual ravishda belgilanadi.
+                O‘zingizga mos variantni tanlang va biz bilan bog‘laning!</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="price-item rounded overflow-hidden">
+                    <div class="bg-dark p-4">
+                        <h4 class="text-white mt-2">Standart</h4>
+                        <p class="text-white">Boshlang‘ich loyihalar uchun</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3"><span>Turli xil turdagi websayttelar</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Telegram bot </span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Rule based Chat bot </span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Responsiv dizayn</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <a href="#contact" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Narxni bilish</a>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="price-item rounded overflow-hidden">
-                        <div class="bg-dark p-4">
-                            <h4 class="text-white mt-2">Standart</h4>
-                            <div class="text-white">
-                                <span class="align-top fs-4 fw-bold">$</span>
-                                <h1 class="d-inline display-6 text-primary mb-0"> 29.99</h1>
-                                <span class="align-baseline">/ Oyiga</span>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsiv dizayn</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Turli brauzerlarga moslashuv</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>Mualliflik huquqini olib tashlash</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax aloqa formasi</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>6 oy davomida bepul qo‘llab-quvvatlash</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Boshlash</a>
-                        </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="price-item rounded overflow-hidden">
+                    <div class="bg-primary p-4">
+                        <h4 class="text-white mt-2">Professional</h4>
+                        <p class="text-white">Katta hajmdagi loyihalar uchun</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3"><span>Turli brauzerlarga moslashuv</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Mualliflik huquqini olib tashlash</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Ai chatbot</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Yirik loyihalar uchun webstaylar </span><i class="fa fa-check text-success pt-1"></i></div>
+                        <a href="#contact" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Narxni bilish</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item rounded overflow-hidden">
-                        <div class="bg-primary p-4">
-                            <h4 class="text-white mt-2">Professional</h4>
-                            <div class="text-white">
-                                <span class="align-top fs-4 fw-bold">$</span>
-                                <h1 class="d-inline display-6 text-dark mb-0"> 49.99</h1>
-                                <span class="align-baseline">/ Oyiga</span>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsiv dizayn</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Turli brauzerlarga moslashuv</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>Mualliflik huquqini olib tashlash</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax aloqa formasi</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>6 oy davomida bepul qo‘llab-quvvatlash</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Boshlash</a>
-                        </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="price-item rounded overflow-hidden">
+                    <div class="bg-dark p-4">
+                        <h4 class="text-white mt-2">Maksimal</h4>
+                        <p class="text-white">To‘liq tayyor yechimlar</p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="price-item rounded overflow-hidden">
-                        <div class="bg-dark p-4">
-                            <h4 class="text-white mt-2">Maksimal</h4>
-                            <div class="text-white">
-                                <span class="align-top fs-4 fw-bold">$</span>
-                                <h1 class="d-inline display-6 text-primary mb-0"> 79.99</h1>
-                                <span class="align-baseline">/ Oyiga</span>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsiv dizayn</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Turli brauzerlarga moslashuv</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>Mualliflik huquqini olib tashlash</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax aloqa formasi</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>6 oy davomida bepul qo‘llab-quvvatlash</span><i
-                                    class="fa fa-check text-success pt-1"></i></div>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Boshlash</a>
-                        </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3"><span>Crm ERP Tizimlari</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Biznesni Avtomatlashtirish</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>Database management</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <div class="d-flex justify-content-between mb-3"><span>6 oy davomida bepul qo‘llab-quvvatlash</span><i class="fa fa-check text-success pt-1"></i></div>
+                        <a href="#contact" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Narxni bilish</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <!-- Pricing End -->
 
@@ -478,50 +434,50 @@
     <div class="container-xxl py-6" id="testimonial">
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-3">What Our Clients Say</h1>
+                <h1 class="mb-3">Mijozlarimizning Fikrlari</h1>
                 <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat
                     ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item bg-light rounded my-4">
-                    <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo
-                        justo.</p>
+                    <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Xizmatdan juda
+                        mamnunman! Buyurtmam qisqa vaqt ichida bajarildi va natijalar kutilganidan ham yaxshiroq bo‘ldi.
+                        Kelajakda yana hamkorlik qilishni rejalashtiryapman. Rahmat!.</p>
                     <div class="d-flex align-items-center">
                         <img class="img-fluid flex-shrink-0 rounded-circle"
                              src="{% static 'soffer-1.0.0/img/testimonial-1.jpg' %}" style="width: 65px; height: 65px;"
                              alt="">
                         <div class="ps-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="mb-1">Dilnoza </h5>
+                            <span> Tadbirkor</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item bg-light rounded my-4">
-                    <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo
-                        justo.</p>
+                    <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Professional va
+                        ishonchli xizmat! Mijozlarga e’tibor berilishi va sifatlilik darajasi menga juda yoqdi. Barchaga
+                        tavsiya qilaman!.</p>
                     <div class="d-flex align-items-center">
                         <img class="img-fluid flex-shrink-0 rounded-circle"
                              src="{% static 'soffer-1.0.0/img/testimonial-2.jpg' %}" style="width: 65px; height: 65px;"
                              alt="">
                         <div class="ps-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="mb-1">Hasanbek</h5>
+                            <span>Grafik Dizayner</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item bg-light rounded my-4">
-                    <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo
-                        justo.</p>
+                    <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Tezkor va sifatli
+                        yechimlar! Men uchun eng muhimi – vaqtida yetkazib berish va yuqori sifat. Bu jamoa aynan shuni
+                        ta’minladi. Rahmat</p>
                     <div class="d-flex align-items-center">
                         <img class="img-fluid flex-shrink-0 rounded-circle"
                              src="{% static 'soffer-1.0.0/img/testimonial-3.jpg' %}" style="width: 65px; height: 65px;"
                              alt="">
                         <div class="ps-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="mb-1">Rustam O</h5>
+                            <span>Dasturchi</span>
                         </div>
                     </div>
                 </div>
@@ -536,17 +492,16 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="mb-3">Get In Touch</h1>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form
-                        with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
-                        done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    <h1 class="mb-3">Biz bilan bog'lanish</h1>
+                    <p class="mb-4">O'zingizni qiziqtirgan savollingizni yosib qoldiring siz bilan tez orada bog'lanamiz
+
                     <div class="d-flex mb-4">
                         <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
                             <i class="fa fa-phone-alt"></i>
                         </div>
                         <div class="ms-3">
                             <p class="mb-2">Call Us</p>
-                            <h5 class="mb-0">+012 345 6789</h5>
+                            <h5 class="mb-0">+998 93 364 44 01</h5>
                         </div>
                     </div>
                     <div class="d-flex mb-4">
@@ -564,7 +519,7 @@
                         </div>
                         <div class="ms-3">
                             <p class="mb-2">Our Office</p>
-                            <h5 class="mb-0">123 Street, New York, USA</h5>
+                            <h5 class="mb-0">Tashkent region, Angren</h5>
                         </div>
                     </div>
                 </div>
@@ -620,8 +575,8 @@
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3">
                     <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Tashkent region, Angren</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+998 94 364 44 01</p>
                     <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -662,13 +617,7 @@
         <div class="container px-lg-5">
             <div class="copyright">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
 
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="">Home</a>
