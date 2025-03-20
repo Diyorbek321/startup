@@ -90,7 +90,7 @@ CHAT_PATTERNS = [
         patterns=['Kompaniya haqida'],
         responses=[
             "Kompaniyamiz 5 yildan beri ishlab kelmoqda "
-            'Biz qanday ishlaymiz?'
+            'Biz qanday ishlaymiz? '
             'Biz mijozlarga ularning hohish istaklaridan kelib chiqgan holda dasturiy taminoat yaratishga yordam beramiz '
             'Qanday dasturiy taminot yaratamiz? '
             'Biz biznesingiz uchun it yechimlarini taklif qilamiz yani tuli xil web saytlar chatbot crm erp telegram bot tizimlarini taklif qilamiz'
